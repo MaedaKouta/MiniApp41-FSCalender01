@@ -13,9 +13,11 @@
 		87E2CB0928016D8800BD269A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E2CB0728016D8800BD269A /* Main.storyboard */; };
 		87E2CB0B28016D8900BD269A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E2CB0A28016D8900BD269A /* Assets.xcassets */; };
 		87E2CB0E28016D8900BD269A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E2CB0C28016D8900BD269A /* LaunchScreen.storyboard */; };
+		E27B3AC2439DE1512FC37B8F /* Pods_MiniApp41_FSCalender01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD04EC6A41BBE7664CCDE46 /* Pods_MiniApp41_FSCalender01.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61333A43BEFC401440582494 /* Pods-MiniApp41-FSCalender01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniApp41-FSCalender01.debug.xcconfig"; path = "Target Support Files/Pods-MiniApp41-FSCalender01/Pods-MiniApp41-FSCalender01.debug.xcconfig"; sourceTree = "<group>"; };
 		87E2CAFE28016D8800BD269A /* MiniApp41-FSCalender01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MiniApp41-FSCalender01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E2CB0128016D8800BD269A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87E2CB0328016D8800BD269A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		87E2CB0A28016D8900BD269A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87E2CB0D28016D8900BD269A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87E2CB0F28016D8900BD269A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD04EC6A41BBE7664CCDE46 /* Pods_MiniApp41_FSCalender01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniApp41_FSCalender01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D738DDE994DABB83493F067E /* Pods-MiniApp41-FSCalender01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniApp41-FSCalender01.release.xcconfig"; path = "Target Support Files/Pods-MiniApp41-FSCalender01/Pods-MiniApp41-FSCalender01.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27B3AC2439DE1512FC37B8F /* Pods_MiniApp41_FSCalender01.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35902AF8FCACAE266D89ADC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFD04EC6A41BBE7664CCDE46 /* Pods_MiniApp41_FSCalender01.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87E2CAF528016D8800BD269A = {
 			isa = PBXGroup;
 			children = (
 				87E2CB0028016D8800BD269A /* MiniApp41-FSCalender01 */,
 				87E2CAFF28016D8800BD269A /* Products */,
+				D7CAC1B136D428ADAFC5DFC7 /* Pods */,
+				35902AF8FCACAE266D89ADC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "MiniApp41-FSCalender01";
 			sourceTree = "<group>";
 		};
+		D7CAC1B136D428ADAFC5DFC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61333A43BEFC401440582494 /* Pods-MiniApp41-FSCalender01.debug.xcconfig */,
+				D738DDE994DABB83493F067E /* Pods-MiniApp41-FSCalender01.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87E2CB1228016D8900BD269A /* Build configuration list for PBXNativeTarget "MiniApp41-FSCalender01" */;
 			buildPhases = (
+				591FF32B749312F62DA66E4B /* [CP] Check Pods Manifest.lock */,
 				87E2CAFA28016D8800BD269A /* Sources */,
 				87E2CAFB28016D8800BD269A /* Frameworks */,
 				87E2CAFC28016D8800BD269A /* Resources */,
+				6A50B0DA64538600AE33211F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		591FF32B749312F62DA66E4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiniApp41-FSCalender01-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A50B0DA64538600AE33211F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiniApp41-FSCalender01/Pods-MiniApp41-FSCalender01-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiniApp41-FSCalender01/Pods-MiniApp41-FSCalender01-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiniApp41-FSCalender01/Pods-MiniApp41-FSCalender01-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87E2CAFA28016D8800BD269A /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		87E2CB1328016D8900BD269A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61333A43BEFC401440582494 /* Pods-MiniApp41-FSCalender01.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		87E2CB1428016D8900BD269A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D738DDE994DABB83493F067E /* Pods-MiniApp41-FSCalender01.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
